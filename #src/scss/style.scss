@@ -14,8 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // font-family: "Roboto";
-  // font-weight: 400;
+  font-family: "Ubuntu";
 }
 
 
@@ -25,5 +24,32 @@
   height: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  width: 168px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-big {
+  @extend button;
+  width: 268px;
+}
+
 
 @import 'fonts';
+@import 'main';

@@ -2,12 +2,39 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu";
 }
 
 .container {
   max-width: 1210px;
   margin: 0 auto;
   height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button,
+.btn-big {
+  width: 168px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-big {
+  width: 268px;
 }
 
 @font-face {
@@ -168,4 +195,47 @@
   src: url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+
+main {
+  background-image: url(../img/main.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #ebecee;
+  height: 100vh;
+  position: relative;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  padding: 63px 47px 0 72px;
+  position: relative;
+}
+
+main header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main header nav ul {
+  display: flex;
+  margin-right: 82px;
+  font-weight: 500;
+}
+
+main header nav ul li {
+  margin-left: 50px;
+}
+
+main h1 {
+  font-weight: 300;
+  font-size: 60px;
+  margin: 325px 0 0 240px;
+}
+
+main .btn-big {
+  margin: 60px 0 0 425px;
 }
